@@ -8,8 +8,10 @@ public class SmartPhone extends SmartDevice{
     public SmartPhone() {
     }
 
-    public SmartPhone(String nombre, String marca, String sistemaOperativo, boolean conexionABlutooth) {
+    public SmartPhone(String nombre, String marca, String sistemaOperativo, boolean conexionABlutooth, boolean tieneCamara, boolean instalacionDeProgramas) {
         super(nombre, marca, sistemaOperativo, conexionABlutooth);
+        this.tieneCamara = tieneCamara;
+        this.instalacionDeProgramas = instalacionDeProgramas;
     }
 
     public boolean isTieneCamara() {
